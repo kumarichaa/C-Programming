@@ -1,0 +1,29 @@
+main()
+{
+    int x,y,i,count=0;
+    scanf("%d",&x);
+    for(i=2;i<=x;i++)
+    {
+        y=x;
+        while(y%i==0)
+        {
+            count++;
+            y=y/i;
+        }
+       if(count>=2)
+       {
+           printf("%d",i);
+           break;
+       }
+       else
+       {
+           if(count==1)
+           {
+               printf("-1");
+               break;
+           }
+       }
+    }
+
+    getch();
+}

@@ -1,0 +1,34 @@
+main()
+{
+   int a,b,c,i,N,K,x,count=0,j;
+   scanf("%d%d",&K,&N);
+   for(i=1;i;i++)
+   {
+       x=K*i;
+       a=1;
+       b=-1;
+       for(j=1;j;j++)
+       {
+           c=a+b;
+           b=a;
+           a=c;
+           if(x==c)
+           {
+               count++;
+               break;
+           }
+           else
+           {
+               if(c>x)
+                break;
+           }
+       }
+       if(count==N)
+       {
+           printf("%d",j);
+           break;
+       }
+   }
+   getch();
+
+}

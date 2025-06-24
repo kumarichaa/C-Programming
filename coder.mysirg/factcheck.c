@@ -1,0 +1,33 @@
+main()
+{
+    int i,j,fact,f=1;
+    scanf("%d",&fact);
+    if(fact==1)
+        printf("0 1");
+    else
+    {
+        for(i=2;i;i++)
+        {
+            j=i;
+            f=1;
+            while(j)
+            {
+                f=f*j;
+                j--;
+            }
+            if(f==fact){
+                printf("%d",i);
+                break;
+            }
+            else
+            {
+                if(f>fact)
+                {
+                    printf("-1");
+                    break;
+                }
+            }
+        }
+    }
+    getch();
+}

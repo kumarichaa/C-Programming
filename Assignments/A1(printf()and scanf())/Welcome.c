@@ -1,0 +1,5 @@
+main()
+{
+    printf("Welcome");
+    getch();
+}
